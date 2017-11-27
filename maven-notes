@@ -1,0 +1,4 @@
+# maven-notes
+Execute Maven Goal
+  Driver:/ProjectName
+  clean package -DskipTests=true -Dplatform=x64 [-rf :sub-module]
