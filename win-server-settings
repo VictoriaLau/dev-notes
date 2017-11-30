@@ -1,0 +1,5 @@
+# win-server-settings
+
+1. To set up batch job files, where we can automatically start Applications not depence on any user of the server:
+  C:\Documents and Settings\All Users\Start Menu\Programs\Startup 
+  C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp 
