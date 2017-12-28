@@ -1,0 +1,6 @@
+common issues:
+1. un-reverting
+    mylaptop MINGW64 /c/devspace/myproject (master|REVERTING)
+    solution:
+    $  git reset --hard HEAD
+
