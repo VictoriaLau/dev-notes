@@ -4,3 +4,12 @@ common issues:
     solution:
     $  git reset --hard HEAD
 
+
+
+common commands:
+1. delete stash:
+    A stash created with @code{git stash} or @code{git stash save}
+    so can be deleted with 
+        git stash drop
+    or 
+        git stash drop stash@{n}, where n is the number shown by git stash list.
