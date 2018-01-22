@@ -1,4 +1,19 @@
 # maven-notes
 Execute Maven Goal
   Driver:/ProjectName
-  clean package -DskipTests=true -Dplatform=x64 [-rf :sub-module]
+  # 1. Default build (without cpp, should be enough for most devs)
+  # a. For 64 bit builds 
+  mvn clean package -DskipTests=true -Dplatform=x64 [-rf :sub-module]  
+  
+  # b. For 32 bit builds
+  mvn clean package -DskipTests=true -Dplatform=x86 
+  
+  # 2. Build with cpp projects
+  # a. For 64 bit builds
+  mvn clean package -P withcpp  -DskipTests=true -Dplatform=x64 
+  
+  # b. For 32 bit builds
+  mvn clean package -P withcpp  -DskipTests=true -Dplatform=x86
+  
+  # 3. To build without building the C++, omit the 'withcpp' option.
+  mvn clean package -P withcpp,witheol,withtests -DskipTests=true -Dplatform=x64
