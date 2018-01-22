@@ -1,2 +1,5 @@
 # unix connect to internet:
 /usr/sfw/bin/wget
+
+# unzip
+tar -zxvf file.tar.gz
