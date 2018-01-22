@@ -16,4 +16,4 @@ Execute Maven Goal
   mvn clean package -P withcpp  -DskipTests=true -Dplatform=x86
   
   # 3. To build without building the C++, omit the 'withcpp' option.
-  mvn clean package -P withcpp,witheol,withtests -DskipTests=true -Dplatform=x64
+  mvn clean package -P withcpp,withtests -DskipTests=true -Dplatform=x64
