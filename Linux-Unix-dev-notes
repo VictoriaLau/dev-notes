@@ -4,6 +4,9 @@
 # unzip
 tar -zxvf file.tar.gz
 
+#Use zcat (or, on older systems, gzcat)
+zcat file.gz > file
 
 # copy folder/files via scp
 scp dev/ test/ abc.txt vic@host:/home/vic/
+
