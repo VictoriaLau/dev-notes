@@ -3,3 +3,7 @@
 
 # unzip
 tar -zxvf file.tar.gz
+
+
+# copy folder/files via scp
+scp dev/ test/ abc.txt vic@host:/home/vic/
